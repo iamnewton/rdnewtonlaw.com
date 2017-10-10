@@ -1,0 +1,69 @@
+---
+layout: default
+notification_enabled: true
+---
+
+<section id="intro" class="Intro FLC">
+	<div class="Frame FLC">
+		<div class="welcome">
+			<p>In addition to providing you with a profile of Ronald Newton, Esq. and the services we provide, we hope to become a helpful resource tool to you, our valued clients and visitors. We hope you will search around the site to learn a little about us and what we can do for your firm.</p>
+
+			<nav class="navigation">
+				<ul class="list-inline">
+					<li><a class="Button" href="#services">Services</a></li>
+					<li><a class="Button" href="#services">About</a></li>
+					<li><a class="Button" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<figure class="Photo">
+			<img src="/ui/images/ron.png" alt="a portrait of Ron Newton, Esq." class="image" />
+		</figure>
+	</div>
+</section>
+
+<div class="Cap">
+	<div class="Frame FLC">
+		<section id="services" class="Services FLC">
+			<h1>Services</h1>
+
+			<p>My firm offers a wide range of services to our individual and business clients. Because our firm is relatively small, our clients benefit by getting personalized, quality service that is beyond comparison. Below we have listed the services that we offer.</p>
+
+			<ul class="FLC">
+				{% for service in site.data.services %}
+					<li>{{ service }}</li>
+				{% endfor %}
+			</ul>
+
+			<p class="note">As the list is not all-inclusive, please feel free to <a href="mailto:law@iamnewton.com">inquire</a> about a service if it's not listed. If it's not a service we provide, we would be   happy to refer you to a qualified professional.</p>
+		</section>
+
+		<section id="about" class="Tombstone FLC">
+			<h1>About</h1>
+			<p>Ron Newton is a sole practitioner dedicated to providing dynamic and personal attention to the needs of his clients.</p>
+			<p>With over 30 years of hands on experience in the area of contracts and negotiations, Ron can provide the client a unique and practical application to the formation, review and implementation of contracts as well to the successful completion of negotiations whether contract related or otherwise.</p>
+			<p>As president of his local school board, Ron continues to be deeply committed to area of educational law and how it applies to the student.</p>
+			<p>Ron earned his Bachelor of Arts degree from Tulane University and his Juris Doctorate from Western State University School of Law.  His California Bar Number is 315530. He is a member of the San Bernardino County Bar Association, the Riverside County Bar Association, the Orange County Bar Association and the American Bar Association.</p>
+		</section>
+
+		<section id="about" class="Tombstone FLC">
+			<h1>Contact</h1>
+			<section class="where" itemscope itemtype="Organization">
+				<address class="vcard">
+					<p class="contact"><a href="tel:19099060271" class="phone">Call (909) 906-0271</a></p>
+					<p><a itemprop="email" href="mailto:law@iamnewton.com" class="email">law@iamnewton.com</a></p>
+					<div itemprop="location" itemscope itemtype="PostalAddress">
+						<div itemprop="streetAddress">2910 S. Archibald Ave, Suite A-636</div>
+						<span itemprop="addressLocality">Ontario</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">91761</span>
+					</div>
+				</address>
+				<p><a href="mailto:law@iamnewton.com" class="Button">Contact Us</a></p>
+			</section><!-- Footer : end -->
+		</section>
+
+		<footer class="Footer">
+			<div class="copyright"><small>&copy; 2009-2013. EA Newton. All Rights Reserved.</small></div>
+		</footer><!-- Footer : end -->
+	</div>
+</div>

@@ -1,0 +1,2 @@
+timezone: America/Los_Angeles
+exclude: [ 'README.md', 'Gemfile', 'Gemfile.lock' ]

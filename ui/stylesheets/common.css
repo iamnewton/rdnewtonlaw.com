@@ -1,0 +1,277 @@
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+	background-color: #112d73;
+	font-family: "Work Sans", Helvetica, Arial, sans-serif;
+	color: rgb(50,50,50);
+}
+a:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+a {
+	color: #105095;
+	text-decoration: none;
+}
+a:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+	margin: 0 0 20px;
+	font-size: 60px;
+	font-weight: 300;
+}
+p {
+	line-height: 1.4em;
+}
+.FLC {
+	clear: both;
+}
+.FLC::after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: ".";
+}
+.list-inline {
+	margin-left: -5px;
+	padding-left: 0;
+	list-style: none;
+}
+.list-inline > li {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.Button {
+	display: inline-block;
+	min-width: 100px;
+	margin-bottom: 10px;
+	border: 1px solid #105095;
+	border-radius: 2px;
+	padding: 4px 12px;
+	background-color: #105095;
+	vertical-align: middle;
+	text-align: center;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: normal;
+	cursor: pointer;
+}
+.Button:hover {
+	background-color: #0055cc;
+	text-decoration: none;
+	color: #ffffff;
+	transition: background-position 0.1s linear;
+
+}
+.Button:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+.Button:active {
+	background-color: #0055cc;
+}
+.Button[disabled] {
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+
+.Photo {
+	margin: 0 -10px 0 0;
+	font-size: 0;
+}
+.Photo img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.Cap {
+	background: #0e78ba; /* Old browsers */
+	background: -moz-linear-gradient(top, #0e78ba 0%, #112d73 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0e78ba 0%,#112d73 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0e78ba 0%,#112d73 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #fff;
+}
+
+.Cap .Button {
+	background-color: #fff;
+	color: #105095;
+}
+
+.Cap a {
+	color: #fff;
+}
+.Services,
+.Tombstone {
+	max-width: 640px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.Frame {
+	max-width: 960px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.Header {
+	background-color: #fff;
+}
+.Header .Frame {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+	.Header .logo,
+	.Header .tagline {
+		margin: 0;
+	}
+	.Header .logo {
+		font-size: 55px;
+		font-weight: 700;
+	}
+	.Header .tagline {
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.Header .phone {
+		display: block;
+		font-size: 20px;
+		color: #105095;
+	}
+
+.Intro {
+	background-color: #fff;
+}
+.Intro p:first-child {
+	margin-top: 0;
+}
+
+.Services p {
+	clear: both;
+}
+.Services .note {
+	font-size: .9em;
+}
+.Services ul {
+	margin: 30px 0;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, .2);
+}
+.Services li {
+	display: inline;
+	float: left;
+	width: 84%;
+	margin-right: 20px;
+}
+.Services li {
+	margin-bottom: 5px;
+	padding-left: 15px;
+	list-style: none;
+}
+.Services li::before {
+	display: inline-block;
+	text-indent: -15px;
+	color: #fff;
+	content: '\2022';
+}
+
+	.Tombstone .location {
+		font-size: .75em;
+	}
+	.Tombstone .location .vcard {
+		font-style: normal;
+		line-height: 1.4em;
+	}
+	.Tombstone address {
+		font-style: normal;
+	}
+	.Tombstone .where {
+		margin-bottom: 50px;
+	}
+	.Tombstone .about {
+		font-size: .75em;
+	}
+	.Tombstone .about ul {
+		padding-left: 0;
+		line-height: 1.4em;
+	}
+
+.Footer {
+	clear: both;
+	color: rgb(255,255,255);
+}
+.Footer .copyright {
+	display: block;
+	padding: 10px 0;
+}
+.Footer p {
+	margin-bottom: 30px;
+	font-size: .8em;
+}
+.Footer img {
+	border-radius: 4px;
+}
+@media all and (max-width: 319px) {
+	.Header .phone {
+	.Header .Frame {
+
+		padding-bottom: 30px;
+	}
+		font-size: 1.7em;
+	}
+}
+@media all and (min-width: 768px) {
+	.Header .branding,
+	.Header .contact,
+	.Intro .welcome,
+	.Intro .Lisa,
+	.Tombstone .where,
+	.Tombstone .who {
+		display: inline;
+		float: left;
+		width: 50%;
+	}
+	.Header .contact {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		text-align: right;
+	}
+	.Intro .Lisa {
+		float: right;
+	}
+	.Services li {
+		width: 44%;
+	}
+
+	.Photo {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}
+}
