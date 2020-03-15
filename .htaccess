@@ -3,5 +3,5 @@ Options -MultiViews
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www\.rdnewtonlaw\.com)(:80)? [NC]
-RewriteRule ^(.*) http://rdnewtonlaw.com/$1 [R=301,L]
+RewriteRule ^(.*) https://rdnewtonlaw.com/$1 [R=301,L]
 order deny,allow
